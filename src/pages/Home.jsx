@@ -3,11 +3,12 @@ import MemeCard from "../components/Card";
 import { getAllMemes } from "../api/memes";
 
 
+
 const HomePage =()=>{
     const [data, setData] =useState([]);
     
     useEffect(()=>{
-           getAllMemes().then((memes)=>setData(memes.data.memes));
+           getAllMemes().then((meme)=>setData(meme.data.memes));
         //    getAllMemes().then(meme=>console.log(meme));
     },[]);
     return (
