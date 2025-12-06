@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
+// import { motion } from "framer-motion";.`
 
 const MemeCard = (props) => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const MemeCard = (props) => {
         {/* <Button onClick={(e)=>navigate(`/edit/${props.image}`)} variant="primary">Edit</Button> */}
         passing query parameter na ki path parameter becs image load hone pe
         path change ho raha h
-        <Button
+        <Button 
           onClick={(e) => navigate(`/edit?url=${props.image}`)}
           variant="primary"
         >
